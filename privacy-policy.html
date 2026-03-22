@@ -24,84 +24,110 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: March 8, 2026</p>
+  <p class="updated">Last updated: March 22, 2026</p>
 
   <p>
-    My Quant by GS ("the App") is a free iOS application that provides Monte Carlo stock
-    simulations, AI-powered market sentiment analysis, and financial news. This Privacy
-    Policy explains what information the App processes and how it is used.
+    My Quant by GS ("the App") is an iOS application that provides Monte Carlo stock
+    simulations, AI-powered market sentiment analysis, portfolio tracking, and financial news.
+    This Privacy Policy explains what information the App collects, how it is used, and your rights.
   </p>
 
-  <h2>1. Information We Do Not Collect</h2>
-  <p>The App does <strong>not</strong>:</p>
-  <ul>
-    <li>Require you to create an account or log in</li>
-    <li>Collect your name, email address, or any personal identifiers</li>
-    <li>Track your location</li>
-    <li>use cookies or third-party analytics SDKs</li>
-    <li>Share any data with advertisers</li>
-    <li>Store any of your data on our servers beyond what is necessary to fulfill your request</li>
-  </ul>
+  <h2>1. Information We Collect</h2>
 
-  <h2>2. Information the App Processes</h2>
-  <p>When you use the App, the following data is processed to deliver the service:</p>
-  <ul>
-    <li>
-      <strong>Ticker symbols you search</strong> — the stock ticker you enter (e.g. "AAPL")
-      is sent to our backend server solely to fetch price data, news, and run your simulation.
-      It is not stored or associated with you.
-    </li>
-    <li>
-      <strong>Stock price data</strong> — retrieved from Yahoo Finance (yFinance) on demand.
-      Prices are cached temporarily on our server to improve performance.
-    </li>
-    <li>
-      <strong>News articles</strong> — fetched from Alpha Vantage's News &amp; Sentiment API
-      based on the ticker you request. No personal data is transmitted to Alpha Vantage.
-    </li>
-    <li>
-      <strong>AI sentiment analysis</strong> — news headlines are sent to OpenAI's API to
-      generate a market sentiment summary. No personal information is included in these
-      requests. OpenAI's data usage is governed by
-      <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI's Privacy Policy</a>.
-    </li>
-  </ul>
-
-  <h2>3. Local Storage</h2>
+  <p><strong>Account Information</strong></p>
   <p>
-    The App stores your last searched ticker symbol locally on your device using
-    iOS UserDefaults. This data never leaves your device and can be cleared by
-    deleting the App.
+    When you create an account, we collect your name, email address, and a securely
+    hashed password. This information is stored in Google Firebase Authentication and
+    is linked to your identity. It is used solely to authenticate you and enable
+    account features such as sign in, password reset, and email updates.
   </p>
+
+  <p><strong>Portfolio and Simulation Data</strong></p>
+  <p>
+    We store the ticker symbols you add to your portfolio and the results of Monte Carlo
+    simulations you run. This data is stored in Google Cloud Firestore, linked to your
+    account, and is never shared with third parties. You can delete this data at any
+    time by deleting your account.
+  </p>
+
+  <p><strong>Ticker Symbols</strong></p>
+  <p>
+    When you run a simulation or load news, the ticker symbol you enter is sent to our
+    backend server to fetch price data and news. Ticker symbols are not stored beyond
+    what is saved in your portfolio.
+  </p>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>To authenticate you and maintain your account</li>
+    <li>To store and display your portfolio and simulation history across devices</li>
+    <li>To send account-related emails such as email address verification</li>
+    <li>To run Monte Carlo simulations and return results to you</li>
+  </ul>
+  <p>We do not sell, rent, or share your personal data with advertisers or third parties.</p>
+
+  <h2>3. Data Linked to Your Identity</h2>
+  <p>The following data is collected and linked to your identity:</p>
+  <ul>
+    <li>Name</li>
+    <li>Email address</li>
+    <li>Portfolio tickers and simulation history</li>
+  </ul>
 
   <h2>4. Third-Party Services</h2>
-  <p>The App relies on the following third-party services to function:</p>
+  <p>The App relies on the following third-party services:</p>
   <ul>
-    <li><a href="https://finance.yahoo.com" target="_blank">Yahoo Finance (yFinance)</a> — stock price data</li>
-    <li><a href="https://www.alphavantage.co" target="_blank">Alpha Vantage</a> — financial news and sentiment scores</li>
-    <li><a href="https://openai.com" target="_blank">OpenAI</a> — AI-powered sentiment analysis</li>
+    <li>
+      <strong>Google Firebase</strong> — user authentication and Firestore database.
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>
+    </li>
+    <li>
+      <strong>Render</strong> — backend simulation server hosting. Ticker symbols are
+      sent to our Render-hosted backend. No personal information is transmitted.
+    </li>
+    <li>
+      <strong>Alpha Vantage</strong> — financial news and market data.
+      No personal information is transmitted to Alpha Vantage.
+      <a href="https://www.alphavantage.co/privacy.php" target="_blank">Alpha Vantage Privacy Policy</a>
+    </li>
+    <li>
+      <strong>OpenAI</strong> — AI-powered sentiment analysis. News headlines are sent
+      to OpenAI's API. No personal information is included in these requests.
+      <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a>
+    </li>
   </ul>
+
+  <h2>5. Data Retention and Deletion</h2>
   <p>
-    These services have their own privacy policies and are not controlled by us.
-    We encourage you to review their policies.
+    Your account data is retained until you delete your account. You can permanently
+    delete your account and all associated data at any time from
+    <strong>Settings → Delete Account</strong> within the App. Deletion removes all
+    data from Firebase Authentication and Cloud Firestore immediately.
   </p>
 
-  <h2>5. Children's Privacy</h2>
+  <h2>6. Your Rights</h2>
+  <ul>
+    <li>Update your name, email, or password at any time from Settings → Edit Profile</li>
+    <li>Delete your account and all data at any time from Settings → Delete Account</li>
+    <li>Contact us to request a copy of your data</li>
+  </ul>
+
+  <h2>7. Children's Privacy</h2>
   <p>
-    The App is not directed at children under the age of 16. We do not knowingly
-    collect any information from children under 16.
+    The App is not directed at children under the age of 13. We do not knowingly
+    collect personal information from children under 13.
   </p>
 
-  <h2>6. Changes to This Policy</h2>
+  <h2>8. Changes to This Policy</h2>
   <p>
-    We may update this Privacy Policy from time to time. Any changes will be
-    reflected on this page with an updated date. Continued use of the App
-    after changes constitutes your acceptance of the revised policy.
+    We may update this Privacy Policy from time to time. Changes will be reflected
+    on this page with an updated date. Continued use of the App after changes
+    constitutes your acceptance of the revised policy.
   </p>
 
-  <h2>7. Contact</h2>
+  <h2>9. Contact</h2>
   <p>
-    If you have any questions about this Privacy Policy, please contact us at:<br/>
+    If you have questions about this Privacy Policy, please contact us at:<br/>
     gadeservicess@gmail.com
   </p>
 
